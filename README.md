@@ -1,3 +1,11 @@
+### NOTE: The spitcast api uses http, rather than https. 
+
+Attempting to host on a service like Netlify will result in an error when attempting to fetch data.
+
+Chrome can bypass restrictions by providing a shield within the address bar to toggle http/https resource restrictions.
+
+---
+
 *Psst — looking for a shareable component template? Go here --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*
 
 ---
