@@ -1,6 +1,7 @@
 <script>
   import Spots from "./Spots.svelte";
   import Spot from "./Spot.svelte";
+  import { fade } from "svelte/transition";
 
   let selected;
   let county = "san-diego";
@@ -91,7 +92,9 @@
     </aside>
     <main>
       {#if spot}
-        <Spot {spot} />
+        <div transition:fade={{ delay: 25, duration: 300 }}>
+          <Spot {spot} />
+        </div>
       {:else}
         <div class="intro">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
